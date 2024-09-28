@@ -1,0 +1,59 @@
+/* Gaya untuk mengatur elemen popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Konten modal */
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+}
+
+/* Mengatur input checkbox agar tidak terlihat */
+.popup-checkbox {
+    display: none;
+}
+
+/* Mengubah tampilan popup ketika checkbox dicentang */
+.popup-checkbox:checked + .open-popup-btn + .popup {
+    display: flex;
+}
+
+/* Tombol untuk membuka popup */
+.open-popup-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Tombol untuk menutup popup */
+.close-popup-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}

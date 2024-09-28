@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #cbfaf5;
+    color: #005270;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5vw;
+    background-color: #cbfaf5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 90vw;
+}
+
+.line {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.atas {
+    width: 50vw;
+    border-bottom: 2px solid #005270;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.logo img {
+    width: 5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #005270;
+    font-weight: 500;
+}
+
+.hero {
+    text-align: left;
+    padding: 10vh 7.5vw;
+    padding-top: 30vh;
+    display: grid;
+    grid-template-columns: 35vw 50vw;
+}
+
+.line-v {
+    width: 50vw;
+    border-left:  2px solid #005270;
+    height: 60vh;
+}
+
+h1 {
+    font-size: 8em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 300;
+    justify-self: end;
+    align-self: end; 
+}
+
+b {
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 5em;
+    font-weight: 300;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .5em;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    padding: 10vw;
+}
+
+.left {
+    padding-right: 4rem;
+}
+
+.left h3 {
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.right {
+    padding-left: 4rem;
+    border-left: 2px solid #005270;
+    align-content: center;
+}
+
+.right img {
+    margin: 1rem 1vw;
+    width: 30vw;
+}
+
+#experience h3 {
+    margin-left: 0;
+    padding: 0;
+}
+
+h5 {
+    font-size: 1.2em;
+    padding: .5em;
+    padding-top: 0;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    max-width: 80vw;
+}
+
+.popup-checkbox {
+    display: none;
+}
+
+.popup-checkbox:checked + .open-popup-btn + .popup {
+    display: flex;
+}
+
+.open-popup-btn {
+    color: #005270;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 400;
+}
+
+label img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+}
+
+label {
+    flex: 1 1 200px; 
+    max-width: 200px; 
+}
+
+.frontend label {
+    max-width: 400px;
+    margin: 5px;
+}
+
+.program label img {
+    width: 10rem;
+}
+
+.design label img {
+    width: 10rem;
+}
+
+.connect-with-me {
+    border-top: 2px solid #005270;
+}
+
+#experience {
+    width: 80vw;
+    padding: 10vw;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    color: #005270;
+    align-self: center;
+}
+
+.link img {
+    color: #005270;
+    margin-right: 1em;
+}
+
+a.connect {
+    text-decoration: none;
+    font-weight: 500;
+    color: #005270;
+    display: inline-flex;
+    padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    /* header {
+        flex-direction: column;
+        text-align: center;
+    } */
+
+    /* nav ul {
+        margin-left: 20px;
+    } */
+
+    nav li {
+        margin: 10px 10px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .atas {
+        display: none;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    #about {
+        grid-template-columns: auto;
+        grid-row: auto auto;
+    }
+
+    .left {
+        padding-left: 4rem;
+        padding-right: 0;
+        border-left: 2px solid #005270;
+    }
+
+    .frontend label {
+        max-width: 80vw;
+        margin: 5px;
+    }
+}
